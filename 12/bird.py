@@ -11,6 +11,7 @@ import game_framework
 
 
 # R E A D M E
+# 새의 속도 구현
 # RUN_SPEED_KMPH = 20.0 # km / Hour 새의 움직이는 속도를 지정합니다.
 # 이 변수를 통해서 새의 움직임 속도를 정했습니다.
 # 속도는 시속 20km 로 지정했습니다.
@@ -25,6 +26,10 @@ import game_framework
 # self.frame = (self.frame + FRAMES_PER_ACTION * ACTION_PER_TIME * game_framework.frame_time) % 14
 # 이를 game_framework.frame_time 과 곱해서 시간에 맞게 프레임이 지정되도록 설정했습니다.
 
+# 새의 크기는
+# 애니메이션 png 파일의 새 한마리의 크기가 100 100 이므로
+# 이와 동일하게 100 100 으로 설정했습니다.
+
 
 
 # fill expressions correctly
@@ -37,7 +42,7 @@ RUN_SPEED_PPS = (RUN_SPEED_MPS * PIXEL_PER_METER)
 
 # bird Action Speed
 # fill expressions correctly
-TIME_PER_ACTION = 0.5 # 새의 움직임 모션 속도를 지정합니다.
+TIME_PER_ACTION = 0.6 # 새의 움직임 모션 속도를 지정합니다.
 ACTION_PER_TIME = 1.0 / TIME_PER_ACTION
 FRAMES_PER_ACTION = 5
 
